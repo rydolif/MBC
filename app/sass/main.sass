@@ -1,0 +1,288 @@
+@import "libs"
+@import "base"
+
+.container
+	max-width: 1700px
+	width: 100%
+	padding: 0 15px
+	margin: 0 auto
+
+
+.header
+	position: absolute
+	top: 0
+	right: 0
+	left: 0
+	padding: 20px 0
+	box-shadow: 0 0 15px 0 rgba($black, .5)
+	background-color: $bg
+	transition: all .6s
+	z-index: 2
+
+	&--active
+		padding-bottom: 115px
+		box-shadow: 0 0 25px 0 rgba($accent, .7)
+
+	&__container
+		display: flex
+		justify-content: space-between
+		align-items: center
+		flex-wrap: wrap
+
+	&__shop
+		width: 30px
+		height: 33px
+		border: none
+		background-color: transparent
+		background-image: url(../img/shop.png)
+		background-repeat: no-repeat
+		background-position: center
+		transition: all .6s
+
+		&:hover,
+		&:focus
+			transform: scale(.9)
+
+	&__nav
+		position: absolute
+		bottom: 45px
+		right: 0
+		left: 0
+		width: 100%
+		z-index: -1
+		opacity: 0
+		transition: all .6s
+
+		ul
+			display: flex
+			justify-content: center
+			flex-wrap: wrap
+			width: 100%
+
+		li
+			margin-right: 40px
+
+			&:last-child
+				margin-right: 0
+
+		a
+			font-size: 25px
+			line-height: 1
+			color: $text
+
+			&:hover,
+			&:focus
+				color: $accent
+
+		&--active
+			opacity: 1
+
+
+.hero
+	padding:
+		top: 100px
+		bottom: 20px
+
+	&__slider
+		box-shadow: 0 0 20px 0 rgba($black, 1)
+		border-radius: 15px
+
+		img
+			width: 100%
+
+	&__prev,
+	&__next
+		background-image: none
+		width: auto
+		height: auto
+		transition: all .6s
+		margin-top: 0
+		transform: translate(0, -50%)
+
+
+	&__prev
+		left: 50px
+
+	&__next
+		right: 50px
+
+	&__pagination
+		bottom: 35px
+
+		span
+			width: 75px
+			border-radius: 3px
+			height: 4px
+			background-color: #565656
+			transition: all .6s
+			opacity: 1
+
+		.swiper-pagination-bullet-active
+			background-color: $accent
+
+
+.catalog
+	text-align: center
+	padding: 20px 0
+
+	&__container
+		box-shadow: 0 0 20px 0 rgba($black, 1)
+		border-radius: 15px
+		background-color: $bg
+		padding: 75px 15px 90px
+
+
+.gallery
+	padding: 20px 0
+
+	&__grid
+		border-radius: 15px
+		display: flex
+		flex-wrap: wrap
+		justify-content: space-between
+
+	&__item
+		position: relative
+		border-radius: 15px
+		width: 28.4%
+		margin-bottom: 0.2%
+
+		&::before
+			content: ''
+			display: block
+			position: absolute
+			width: 100%
+			height: 100%
+			top: 0
+			right: 0
+			bottom: 0
+			left: 0
+			box-shadow: 0 0 20px 0 rgba($black, 1)
+			z-index: -1
+			border-radius: 15px
+
+		&--big
+			width: 42.8%
+
+		img
+			width: 100%
+			height: auto
+			border-radius: 15px
+
+
+.look
+	padding: 20px 0 40px
+
+	&__container
+		position: relative
+		padding-top: 320px
+		padding-bottom: 320px
+		background-color: $bg
+		border-radius: 15px
+		box-shadow: 0 0 20px 0 rgba($black, 1)
+		text-align: center
+		z-index: 1
+		
+	p
+		color: $accent
+		margin-bottom: 10px
+		font-size: 33px
+
+	img
+		position: absolute
+		left: 50%
+		top: 50%
+		transform: translate(-50%, -50%)
+		width: 100%
+		height: 100%
+		border-radius: 15px
+		z-index: -1
+
+
+.footer
+	padding-top: 70px
+	padding-bottom: 40px
+	background-color: $bg
+	box-shadow: 0 0 20px 0 rgba($black, 1)
+	background-image: url(../img/footer--bg.png)
+	text-align: center
+	font-size: 25px
+
+	ul
+		display: flex
+		justify-content: center
+		flex-wrap: wrap
+		width: 27%
+		margin: 0 auto 35px
+
+	li
+		width: 33%
+
+		&:last-child
+			margin-right: 0
+
+	a
+		line-height: 1
+		color: $text
+
+		&:hover,
+		&:focus
+			color: $accent
+
+	span
+		color: $accent
+
+
+	p
+		margin-bottom: 35px
+
+	&__info
+		display: flex
+		flex-wrap: wrap
+		justify-content: center
+
+		p
+			margin-right: 50px
+
+			&:last-child
+				margin-right: 0
+
+		a
+			color: $accent
+
+			&:hover,
+			&:focus
+				color: $text
+
+	&__soc
+		margin-bottom: 45px
+		display: flex
+		justify-content: center
+
+		a
+			display: block
+			margin-right: 15px
+
+			img
+				transition: all .6s
+
+			&:hover,
+			&:focus
+				img
+					transform: scale(.9)
+
+			&:last-child
+				margin-right: 0
+
+			
+	&__copy
+		font-size: 21px
+
+		span
+			font-size: 12px
+			display: block
+			margin-top: 10px
+			
+
+
+@import "media" // Always at the end
