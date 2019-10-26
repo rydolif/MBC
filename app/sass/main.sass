@@ -320,9 +320,7 @@
 	
 
 .login
-	padding:
-		top: 100px
-		bottom: 40px
+	padding-bottom: 40px
 	background-image: url(../img/cabinet--bg.png)
 	background-position: 0 0
 	background-repeat: repeat-x
@@ -557,6 +555,62 @@
 			padding: 0 30px
 			height: 65px
 			line-height: 65px
+
+
+.logout
+	padding: 20px 0
+	text-align: center
+	
+	&__container
+		width: 70%
+		margin: 0 auto
+		background-image: url(../img/logout--bg.png)
+		background-size: cover
+		background-color: $bg
+		background-position: 0 -100px
+		background-repeat: no-repeat
+		box-shadow: 0 0 20px 0 rgba($black, 1)
+		border-radius: 15px
+		padding: 115px 50px 90px
+
+	h2
+		font-size: 35px
+		text-transform: uppercase
+		margin-bottom: 5px
+		
+	p
+		font-size: 21px
+		margin-bottom: 40px
+
+	img
+		margin-bottom: 50px
+
+	button
+		border: none
+		background-color: transparent
+		outline: none
+		font-size: 38px
+		padding: 0 70px
+		cursor: pointer
+		transition: all .6s
+		margin: 5px
+
+		&:hover,
+		&:focus
+			transform: scale(.9)
+		
+
+	&__red
+		color: $red
+
+	&__green
+		color: $green
+
+
+
+
+	
+
 
 
 @import "media" // Always at the end
