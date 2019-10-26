@@ -17,6 +17,9 @@
 	.look__container
 		padding: 200px 0
 
+	.profile
+		width: 80%
+
 
 @media only screen and (max-width : 1200px)
 	.container
@@ -27,6 +30,22 @@
 
 	.footer ul
 		width: 50%
+	
+	.login
+		&__nav
+			font-size: 24px
+
+		&__edit
+			font-size: 20px
+
+		&__form
+			width: 50%
+
+			&--none
+				width: 100%
+
+	.profile
+		width: 100%
 
 
 @media only screen and (max-width : 992px)
@@ -85,6 +104,17 @@
 		&__soc,
 		&__info
 			margin-bottom: 15px
+	
+	.cabinet
+		&__sub-title
+			font-size: 18px
+			margin-bottom: 1.5em
+
+			br
+				display: none
+				
+		&__form
+			width: 70%
 
 
 @media only screen and (max-width : 767px)
@@ -109,6 +139,52 @@
 
 			p
 				margin-right: 0
+
+	.login
+		&__nav
+			font-size: 20px
+			margin-bottom: 15px
+
+		&__edit
+			font-size: 16px
+			margin-bottom: 20px
+
+		&__form
+			width: 70%
+
+			p
+				font-size: 20px
+				margin-bottom: 1em
+
+
+		&__block
+			width: 100%
+
+
+
+
+		.btn
+			padding: 0 20px
+
+
+		&__pass
+			font-size: 14px
+
+
+	.profile
+		&__block,
+		&__col
+			width: 100%
+			margin-bottom: 15px
+
+		&__block
+			padding: 10px
+
+		&__check
+			font-size: 24px
+	
+		&__btn a
+			width: 70%
 
 
 @media only screen and (max-width : 576px)
@@ -161,19 +237,30 @@
 		&__soc,
 		&__info
 			margin-bottom: 10px
-	
+		
+	.cabinet
+		&__form
+			width: 100%
+
 
 @media only screen and (max-width : 480px)
 	h2
 		font-size: 22px
 
+	input
+		font-size: 16px
+		height: 40px
+		line-height: 40px
+		&::placeholder
+			font-size: 16px
+
 	.btn
 		max-width: 100%
 		width: 100%
 		padding: 0 30px
-		font-size: 16px
-		height: 40px
-		line-height: 40px
+		font-size: 16px !important
+		height: 40px !important
+		line-height: 40px !important
 
 	.hero
 		&__next,
@@ -203,6 +290,34 @@
 		&__copy
 			font-size: 16px
 
+	.cabinet
+		&__sub-title
+			font-size: 16px
 
+		&__input
+			margin-bottom: 10px
 
+	.login
+		&__nav
+			font-size: 18px
 
+		&__edit
+			font-size: 14px
+
+		&__form
+			width: 100%
+
+			p
+				font-size: 14px
+
+		label
+			height: 40px
+			line-height: 40px
+			font-size: 16px
+
+	.profile
+		&__description
+			font-size: 16px
+
+		&__btn a
+			width: 100%

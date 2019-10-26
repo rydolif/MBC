@@ -200,8 +200,7 @@
 
 
 .footer
-	padding-top: 70px
-	padding-bottom: 40px
+	padding: 40px 0
 	background-color: $bg
 	box-shadow: 0 0 20px 0 rgba($black, 1)
 	background-image: url(../img/footer--bg.png)
@@ -282,7 +281,282 @@
 			font-size: 12px
 			display: block
 			margin-top: 10px
-			
+
+
+.back
+	padding:
+		top: 100px
+		bottom: 20px
+
+
+.cabinet
+	background-image: url(../img/cabinet--bg.png)
+	background-position: 0 0
+	background-size: cover
+	text-align: center
+	padding-top: 20px
+	padding-bottom: 40px
+	animation: cabinet 180s linear infinite
+	min-height: 50vh
+
+	h2
+		margin-bottom: 5px
+
+	&__sub-title
+		font-size: 20px
+		margin-bottom: 55px
+
+	&__form
+		width: 45%
+
+	&__input
+		width: 100%
+		margin-bottom: 25px
+	
+	&__check
+		color: $green
+		font-size: 30px
+		margin-bottom: 1.8em
+	
+
+.login
+	padding:
+		top: 100px
+		bottom: 40px
+	background-image: url(../img/cabinet--bg.png)
+	background-position: 0 0
+	background-repeat: repeat-x
+	text-align: center
+	animation: cabinet 180s linear infinite
+	min-height: 60vh
+
+	&__nav
+		font-size: 32px
+		display: flex
+		justify-content: center
+		flex-wrap: wrap
+		margin-bottom: 15px
+
+		a
+			color: #565656
+			margin-right: 25px
+
+			&:hover,
+			&:focus
+				color: $accent
+
+			&:last-child
+				margin-right: 0
+
+		.active
+			color: $text !important
+
+	&__edit
+		margin-bottom: 40px
+		display: flex
+		justify-content: center
+		flex-wrap: wrap
+		font-size: 26px
+
+		a
+			color: #565656
+			margin-right: 25px
+
+			&:hover,
+			&:focus
+				color: $accent
+
+			&:last-child
+				margin-right: 0
+
+		.active
+			color: $text !important
+
+	&__form
+		display: flex
+		flex-wrap: wrap
+		justify-content: space-around
+		width: 26%
+		text-align: center
+		font-size: 30px
+
+		&--none
+			width: 80%
+
+		.btn
+			width: 100%
+			margin-bottom: 15px
+
+		p
+			margin-bottom: 20px
+
+	&__block
+		width: 48%
+		margin-bottom: 20px
+	
+	&__pass
+		display: block
+		font-size: 18px
+		color: $text
+		text-decoration: underline
+		
+		&:hover,
+		&:focus
+			color: $accent
+			text-decoration: underline
+
+	&__none
+		font-size: 22px
+		margin-bottom: 20px
+
+	&__btn
+		width: 100%
+
+		.btn
+			width: 40%
+
+	label
+		position: relative
+		margin-bottom: 0 !important
+		height: 55px
+		line-height: 55px
+		background-color: $input
+		width: 100%
+
+		&:hover,
+		&:focus
+			background-color: rgba($accent, .6)
+
+	input[type="radio"]
+		display: none
+
+	input[type="radio"]:checked + label
+		outline: none
+		text-decoration: none
+		cursor: pointer
+		box-shadow: 0 0 15px rgba($accent, 1)
+		background-color: $accent
+		color: #fff
+	
+	&__ok
+		margin-bottom: 30px
+
+
+.profile
+	display: flex
+	justify-content: space-around
+	flex-wrap: wrap
+	width: 60%
+	margin: 0 auto
+
+	&__block
+		width: 48%
+		background-color: $bg
+		border-radius: 15px
+		box-shadow: 0 0 20px 0 rgba($black, 1)
+		padding: 15px
+		font-size: 16px
+		margin-bottom: 30px
+
+		p
+			margin-bottom: 5px
+
+		b
+			font-size: 18px
+			letter-spacing: 1px
+
+		span
+			color: $accent
+
+	&__col
+		display: flex
+		flex-direction: column
+		width: 48%
+		text-align: left
+		margin-bottom: 30px
+
+		&:last-child
+			margin-bottom: 0
+
+		div
+			width: 100%
+			margin-bottom: 12px
+
+			&:last-child
+				margin-bottom: 0
+	
+	&__price
+		font-size: 26px
+
+		span
+			color: $green
+
+		div
+			height: 14px
+			width: 100%
+			background-color: $input
+			border-radius: 5px
+
+			span
+				display: block
+				background-color: $green
+				height: 100%
+				border-radius: 5px
+
+	&__check
+		text-align: center
+		color: $green
+		font-size: 30px
+
+		img
+			margin-left: 5px
+
+	&__text
+		text-transform: uppercase
+		margin-bottom: 10px
+		font-size: 20px
+		
+		span
+			color: $accent
+
+		&--min
+			font-size: 14px
+
+		&--big
+			font-size: 26px
+
+	&__description
+		font-size: 21px
+		margin-bottom: 0 !important
+
+		&--big
+			font-size: 26px
+
+	&__position
+		font-size: 22px
+		margin-bottom: 0 !important
+
+		b
+			color: $accent
+			font-size: 24px
+
+	&__form
+		width: 44%
+		text-align: center
+		font-size: 22px
+
+		p
+			margin-bottom: 20px
+
+	&__btn
+		width: 100%
+
+		a
+			font-size: 26px
+			width: 48%
+			padding: 0 30px
+			height: 65px
+			line-height: 65px
 
 
 @import "media" // Always at the end
