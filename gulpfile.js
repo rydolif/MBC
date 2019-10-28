@@ -51,8 +51,8 @@ gulp.task('styles', function() {
 gulp.task('minjs', function() {
 	return gulp.src([
 		'app/libs/jquery/dist/jquery.min.js',  			//----jquery
-		'app/libs/jquery.validate.js', 					//----форма
-		'app/libs/jquery.mask.min.js', 					//----форма
+		// 'app/libs/jquery.validate.js', 					//----форма
+		// 'app/libs/jquery.mask.min.js', 					//----форма
 		// 'app/libs/jquery.popupoverlay.js', 				//----модалки
 		// 'app/libs/slick/slick.js', 					//----слайдер
 		 // 'app/libs/flipclock/flipclock.js',
@@ -73,8 +73,8 @@ gulp.task('minjs', function() {
 gulp.task('js', function() {
 	return gulp.src([
 		'app/libs/jquery/dist/jquery.min.js',  			//----jquery
-		'app/libs/jquery.validate.js', 					//----форма
-		'app/libs/jquery.mask.min.js', 					//----форма
+		// 'app/libs/jquery.validate.js', 					//----форма
+		// 'app/libs/jquery.mask.min.js', 					//----форма
 		// 'app/libs/jquery.popupoverlay.js', 				//----модалки
 		// 'app/libs/slick/slick.js', 					//----слайдер
 		 // 'app/libs/flipclock/flipclock.js',			//----таймер
