@@ -85,7 +85,7 @@
 
 	&__slider
 		box-shadow: 0 0 20px 0 rgba($black, 1)
-		border-radius: 15px
+		border-radius: 10px
 
 		img
 			width: 100%
@@ -128,7 +128,7 @@
 
 	&__container
 		box-shadow: 0 0 20px 0 rgba($black, 1)
-		border-radius: 15px
+		border-radius: 10px
 		background-color: $bg
 		padding: 75px 15px 90px
 
@@ -137,14 +137,14 @@
 	padding: 20px 0
 
 	&__grid
-		border-radius: 15px
+		border-radius: 10px
 		display: flex
 		flex-wrap: wrap
 		justify-content: space-between
 
 	&__item
 		position: relative
-		border-radius: 15px
+		border-radius: 10px
 		width: 28.4%
 		margin-bottom: 0.2%
 
@@ -160,7 +160,7 @@
 			left: 0
 			box-shadow: 0 0 20px 0 rgba($black, 1)
 			z-index: -1
-			border-radius: 15px
+			border-radius: 10px
 
 		&--big
 			width: 42.8%
@@ -168,7 +168,7 @@
 		img
 			width: 100%
 			height: auto
-			border-radius: 15px
+			border-radius: 10px
 
 
 .look
@@ -179,7 +179,7 @@
 		padding-top: 320px
 		padding-bottom: 320px
 		background-color: $bg
-		border-radius: 15px
+		border-radius: 10px
 		box-shadow: 0 0 20px 0 rgba($black, 1)
 		text-align: center
 		z-index: 1
@@ -196,7 +196,7 @@
 		transform: translate(-50%, -50%)
 		width: 100%
 		height: 100%
-		border-radius: 15px
+		border-radius: 10px
 		z-index: -1
 
 
@@ -329,6 +329,28 @@
 	animation: cabinet 180s linear infinite
 	min-height: 60vh
 
+	&--login
+		padding-top: 100px
+
+	&__percent
+		font-size: 18px
+
+		div
+			position: relative
+			display: block
+			background-color: $input
+			height: 15px
+			width: 100%
+			border-radius: 10px
+			overflow: hidden
+			
+		span
+			background-color: $green
+			position: absolute
+			top: 0
+			bottom: 0
+			left: 0
+
 	&__nav
 		font-size: 32px
 		display: flex
@@ -390,7 +412,7 @@
 			margin-bottom: 20px
 
 	&__block
-		width: 48%
+		width: 32%
 		margin-bottom: 20px
 	
 	&__pass
@@ -412,7 +434,13 @@
 		width: 100%
 
 		.btn
-			width: 40%
+			width: 100%
+			padding: 0 15px
+			background-color: #1f1f1f
+
+		a
+			color: #fff
+			font-size: 30px
 
 	label
 		position: relative
@@ -421,7 +449,10 @@
 		line-height: 55px
 		background-color: $input
 		width: 100%
-
+		border-radius: 5px
+		transition: all .6s
+		cursor: pointer
+		
 		&:hover,
 		&:focus
 			background-color: rgba($accent, .6)
@@ -451,7 +482,7 @@
 	&__block
 		width: 48%
 		background-color: $bg
-		border-radius: 15px
+		border-radius: 10px
 		box-shadow: 0 0 20px 0 rgba($black, 1)
 		padding: 15px
 		font-size: 16px
@@ -556,7 +587,10 @@
 			padding: 0 30px
 			height: 65px
 			line-height: 65px
-
+	
+	&__text--orange
+		span
+			color: #FF8C00
 
 .logout
 	padding: 20px 0 40px
@@ -571,7 +605,7 @@
 		background-position: center
 		background-repeat: no-repeat
 		box-shadow: 0 0 20px 0 rgba($black, 1)
-		border-radius: 15px
+		border-radius: 10px
 		padding: 115px 50px 90px
 
 	h2
@@ -626,7 +660,7 @@
 		align-items: center
 		background-color: $bg
 		box-shadow: 0 0 20px 0 rgba($black, 1)
-		border-radius: 15px
+		border-radius: 10px
 		font-size: 24px
 		height: 75px
 		margin: 0 auto 25px
@@ -654,7 +688,7 @@
 			outline: none
 			cursor: pointer
 			transition: all .6s
-			border-radius: 15px
+			border-radius: 10px
 			height: 75px
 			line-height: 75px
 
@@ -675,7 +709,7 @@
 	&__item
 		width: 32%
 		background-color: $bg
-		border-radius: 15px
+		border-radius: 10px
 		padding: 15px
 		box-shadow: 0 0 20px 0 rgba($black, 1)
 		margin-bottom: 15px
@@ -823,7 +857,7 @@
 			position: relative
 			box-shadow: 0 0 20px 0 rgba($black, 1)
 			background-color: $bg
-			border-radius: 15px
+			border-radius: 10px
 
 		img
 			width: 100%

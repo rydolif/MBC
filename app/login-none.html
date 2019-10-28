@@ -40,7 +40,7 @@
 		</div>
 	</header>
 
-	<section class="login">
+	<section class="login login--login">
 		<div class="container">
 
 			<div class="login__nav">
@@ -53,9 +53,13 @@
 				<a href="login-none.html">Нет учетнай записи</a>
 			</div>
 
-			<from class="login__form--none login__form form">
+			<from class="login__form--none login__form form tabs">
 
-				<div class="login__block">
+				<div id="one" class="login__block tabs__wrap">
+					<div class="login__percent">
+						<div><span></span></div>
+						<p>0%</p>
+					</div>
 					<p class="login__none">Это займёт 30 сек! <br>Начнём, введи свою электронную почту</p>
 					<div class="login__input cabinet__input">
 						<input type="email" placeholder="Email*" required>
@@ -63,9 +67,16 @@
 					<div class="login__input cabinet__input">
 						<input type="email" placeholder="Ещё раз! Email*" required>
 					</div>
+					<div class="login__btn next">
+						<a href="#two" class="btn btn--form disabled">Далее</a>
+					</div>
 				</div>
 
-				<div class="login__block">
+				<div id="two" class="login__block tabs__wrap">
+					<div class="login__percent">
+						<div><span style="width: 20%"></span></div>
+						<p>20%</p>
+					</div>
 					<p class="login__none">Всё просто! <br>Твой пол?</p>
 					<div class="login__input cabinet__input">
 						<input type="radio" name="sex" id="man">
@@ -75,9 +86,16 @@
 						<input type="radio" name="sex" id="woman">
 						<label for="woman" class="">Женский</label>
 					</div>
+					<div class="login__btn next">
+						<a href="#three" class="btn btn--form disabled">Далее</a>
+					</div>
 				</div>
 
-				<div class="login__block">
+				<div id="three" class="login__block tabs__wrap">
+					<div class="login__percent">
+						<div><span style="width: 35%"></span></div>
+						<p>35%</p>
+					</div>
 					<p class="login__none">Как тебя зовут? <br>И какая у тебя фамилия?</p>
 					<div class="login__input cabinet__input">
 						<input type="text" placeholder="Имя*" required>
@@ -85,30 +103,58 @@
 					<div class="login__input cabinet__input">
 						<input type="text" placeholder="Фамилия*" required>
 					</div>
+					<div class="login__btn next">
+						<a href="#four" class="btn btn--form disabled">Далее</a>
+					</div>
 				</div>
 
-				<div class="login__block">
+				<div id="four" class="login__block tabs__wrap">
+					<div class="login__percent">
+						<div><span style="width: 55%"></span></div>
+						<p>55%</p>
+					</div>
 					<p class="login__none">Отлично, поехали дальше. <br>Куда звонить? для связи курьера с вами</p>
 					<div class="login__input cabinet__input">
 						<input type="tel" placeholder="+375 (..) ...-..-.." required>
 					</div>
+					<div class="login__btn next">
+						<a href="#five" class="btn btn--form disabled">Далее</a>
+					</div>
 				</div>
 
-				<div class="login__block">
+				<div id="five" class="login__block tabs__wrap">
+					<div class="login__percent">
+						<div><span style="width: 65%"></span></div>
+						<p>65%</p>
+					</div>
 					<p class="login__none">Видишь, всё легко) <br>Когда у тебя День Рождения?</p>
 					<div class="login__input cabinet__input">
 						<input type="date" required>
 					</div>
+					<div class="login__btn next">
+						<a href="#six" class="btn btn--form disabled">Далее</a>
+					</div>
 				</div>
 
-				<div class="login__block">
+				<div id="six" class="login__block tabs__wrap">
+					<div class="login__percent">
+						<div><span style="width: 80%"></span></div>
+						<p>80%</p>
+					</div>
 					<p class="login__none">Осталось немного. <br>Так, ты в какой стране живёшь?</p>
 					<div class="login__input cabinet__input">
 						<input type="text" placeholder="Страна*" required>
 					</div>
+					<div class="login__btn next">
+						<a href="#seven" class="btn btn--form disabled">Далее</a>
+					</div>
 				</div>
 
-				<div class="login__block">
+				<div id="seven" class="login__block tabs__wrap">
+					<div class="login__percent">
+						<div><span style="width: 99%"></span></div>
+						<p>99%</p>
+					</div>
 					<p class="login__none">Почти всё! <br>Придумай себе пароль</p>
 					<div class="login__input cabinet__input">
 						<input type="password" placeholder="Пароль*" required>
@@ -116,17 +162,26 @@
 					<div class="login__input cabinet__input">
 						<input type="password" placeholder="2-й раз Пароль*" required>
 					</div>
+					<div class="login__btn next">
+						<a href="#eight" class="btn btn--form disabled">Далее</a>
+					</div>
 				</div>
 
-				<div class="login__btn login__block">
-					<button class="btn btn--form">Далее</button>
+				<div id="eight" class="login__block tabs__wrap">
+					<div class="login__percent">
+						<div><span style="width: 100%"></span></div>
+						<p>100%</p>
+					</div>
+					<div class="login__btn">
+						<img src="img/ok.png" alt="" class="login__ok">
+						<p class="login__none">Поздравляю тебя, теперь ты часть <br> семьи, мы сделаем всё для твоего<br> счастья.</p>
+						<a href="profile.html" class="btn">Ок</a>
+					</div>
 				</div>
+
+
 			</from>
 
-			<img src="img/ok.png" alt="" class="login__ok">
-			
-			<p class="login__none">Поздравляю тебя, теперь ты часть <br> семьи, мы сделаем всё для твоего<br> счастья.</p>
-			<a href="#" class="btn">ОК</a>
 
 		</div>
 	</section>
