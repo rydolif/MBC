@@ -3,7 +3,7 @@
 
 <head>
 	<meta charset="utf-8">
-	<title>Адрес доставки</title>
+	<title>Корзина</title>
 	<meta name="description" content="">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
@@ -40,7 +40,13 @@
 		</div>
 	</header>
 
-	<section class="login">
+	<section class="back">
+		<div class="container">
+			<a href="index.html" class="btn btn--back">Назад</a>
+		</div>
+	</section>
+	
+	<section class="basket login">
 		<div class="container">
 
 			<div class="login__nav">
@@ -48,22 +54,79 @@
 				<a href="login.html">Профиль</a>
 			</div>
 
-			<div class="login__edit">
-				<a href="login.html">Есть учетная запись</a>
-				<a href="login-none.html">Нет учетнай записи</a>
+			<div class="basket__header">
+				<button>Оформить все</button>
+				<p>Кол-во: <span>0</span></p>
+				<p>Всего: <span>0</span> €</p>
 			</div>
 
-			<from class="login__form form">
-				<p>Вход</p>
-				<div class="cabinet__input">
-					<input type="email" placeholder="Email*" required>
+			<div class="basket__list">
+				
+				<div class="basket__item">
+					<div class="basket__item_img">
+						<img src="img/basket-item.png" alt="">
+					</div>
+					<div class="basket__item_text">
+						<h3>TEESHIRT «Andromeda» <br><span>H.B. COLL.</span></h3>
+						<p>Размер: XL</p>
+						<p>Доставка: Курьер</p>
+						<p>Цвет: Черный</p>
+						<br>
+						<p><span>65 €</span></p>
+					</div>
+					<a href="#" class="btn">Оформить</a>
+					<a href="#" class="btn">Удалить</a>
 				</div>
-				<div class="cabinet__input">
-					<input type="password" placeholder="Пароль*" required>
+				
+				<div class="basket__item">
+					<div class="basket__item_img">
+						<img src="img/basket-item.png" alt="">
+					</div>
+					<div class="basket__item_text">
+						<h3>TEESHIRT «Andromeda» <br><span>H.B. COLL.</span></h3>
+						<p>Размер: XL</p>
+						<p>Доставка: Курьер</p>
+						<p>Цвет: Черный</p>
+						<br>
+						<p><span>65 €</span></p>
+					</div>
+					<a href="#" class="btn">Оформить</a>
+					<a href="#" class="btn">Удалить</a>
 				</div>
-				<button class="btn btn--form">Войти</button>
-				<a href="login-none.html" class="login__pass">Забыли пароль?</a>
-			</from>
+				
+				<div class="basket__item">
+					<div class="basket__item_img">
+						<img src="img/basket-item.png" alt="">
+					</div>
+					<div class="basket__item_text">
+						<h3>TEESHIRT «Andromeda» <br><span>H.B. COLL.</span></h3>
+						<p>Размер: XL</p>
+						<p>Доставка: Курьер</p>
+						<p>Цвет: Черный</p>
+						<br>
+						<p><span>65 €</span></p>
+					</div>
+					<a href="#" class="btn">Оформить</a>
+					<a href="#" class="btn">Удалить</a>
+				</div>
+
+				<div class="basket__item">
+					<div class="basket__item_img">
+						<img src="img/basket-item.png" alt="">
+					</div>
+					<div class="basket__item_text">
+						<h3>TEESHIRT «Andromeda» <br><span>H.B. COLL.</span></h3>
+						<p>Размер: XL</p>
+						<p>Доставка: Курьер</p>
+						<p>Цвет: Черный</p>
+						<br>
+						<p><span>65 €</span></p>
+					</div>
+					<a href="#" class="btn">Оформить</a>
+					<a href="#" class="btn">Удалить</a>
+				</div>
+
+			</div>
 
 		</div>
 	</section>

@@ -3,7 +3,7 @@
 
 <head>
 	<meta charset="utf-8">
-	<title>Адрес доставки</title>
+	<title>Оплата прошла успешно</title>
 	<meta name="description" content="">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
@@ -40,34 +40,60 @@
 		</div>
 	</header>
 
+	<section class="back">
+		<div class="container">
+			<a href="index.html" class="btn btn--back">Назад</a>
+		</div>
+	</section>
+	
 	<section class="login">
 		<div class="container">
 
 			<div class="login__nav">
 				<a href="basket.html">Корзина</a>
-				<a href="login.html">Профиль</a>
+				<a href="login.html" class="active">Профиль</a>
 			</div>
 
-			<div class="login__edit">
-				<a href="login.html">Есть учетная запись</a>
-				<a href="login-none.html">Нет учетнай записи</a>
-			</div>
+			<form class="data profile">
 
-			<from class="login__form form">
-				<p>Вход</p>
-				<div class="cabinet__input">
-					<input type="email" placeholder="Email*" required>
+				<div class="data__block profile__block">
+					<div class="data__line">
+						<p>Номер карты</p>
+						<input type="number" placeholder="0000 0000 0000 0000" required>
+					</div>
+					<div class="data__line data__line--min">
+						<p>Срок действия</p>
+						<input type="number" placeholder="ММ/ГГ" required>
+					</div>
+					<div class="data__line data__line--min">
+						<p>CVV/CVC</p>
+						<input type="number" placeholder="000" required>
+					</div>
+					<div class="data__line">
+						<p>Держатель карты</p>
+						<input type="text" placeholder="IVAN IVANOV" required>
+					</div>
 				</div>
-				<div class="cabinet__input">
-					<input type="password" placeholder="Пароль*" required>
+
+				<div class="data__col profile__col">
+					<div class="profile__block">
+						<p class="data__price">К списанию: <span>89</span> € </p>
+						<p>Валюта EUR по курсу</p>
+					</div>
+					<div class="data__label">
+						<input type="checkbox" id="true">
+						<label for="true">Да, все верно, я подтверждаю это</label>
+					</div>
+					<div class="profile__block">
+						<p class="profile__check">Адрес заполнен <img src="img/check.png" alt=""></p>
+					</div>
+					<button class="btn btn--back">Оплатить</button>
 				</div>
-				<button class="btn btn--form">Войти</button>
-				<a href="login-none.html" class="login__pass">Забыли пароль?</a>
-			</from>
+
+			</form>
 
 		</div>
 	</section>
-
 	<footer class="footer">
 		<div class="footer__container container">
 

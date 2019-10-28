@@ -3,7 +3,7 @@
 
 <head>
 	<meta charset="utf-8">
-	<title>Адрес доставки</title>
+	<title>Удалить</title>
 	<meta name="description" content="">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
@@ -40,30 +40,26 @@
 		</div>
 	</header>
 
-	<section class="login">
+	<section class="back">
+		<div class="container">
+			<a href="index.html" class="btn btn--back">Назад</a>
+		</div>
+	</section>
+
+	<section class="logout">
 		<div class="container">
 
-			<div class="login__nav">
-				<a href="basket.html">Корзина</a>
-				<a href="login.html">Профиль</a>
-			</div>
+	
+			<div class="logout__container">
+				<img src="img/delete.png" alt="">
 
-			<div class="login__edit">
-				<a href="login.html">Есть учетная запись</a>
-				<a href="login-none.html">Нет учетнай записи</a>
-			</div>
+				<h2>ПОДТВЕРДИТЬ УДАЛЕНИЕ?</h2>
+				<p>Эмоции которых не даёт ни один, кроме нас!</p>
 
-			<from class="login__form form">
-				<p>Вход</p>
-				<div class="cabinet__input">
-					<input type="email" placeholder="Email*" required>
-				</div>
-				<div class="cabinet__input">
-					<input type="password" placeholder="Пароль*" required>
-				</div>
-				<button class="btn btn--form">Войти</button>
-				<a href="login-none.html" class="login__pass">Забыли пароль?</a>
-			</from>
+				<button class="logout__btn logout__red">Да</button>
+				<button class="logout__btn logout__green">Нет</button>
+
+			</div>
 
 		</div>
 	</section>

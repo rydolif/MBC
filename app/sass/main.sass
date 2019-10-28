@@ -558,9 +558,9 @@
 
 
 .logout
-	padding: 20px 0
+	padding: 20px 0 40px
 	text-align: center
-	
+
 	&__container
 		width: 70%
 		margin: 0 auto
@@ -585,7 +585,7 @@
 	img
 		margin-bottom: 50px
 
-	button
+	&__btn
 		border: none
 		background-color: transparent
 		outline: none
@@ -594,22 +594,217 @@
 		cursor: pointer
 		transition: all .6s
 		margin: 5px
+		color: $accent
 
 		&:hover,
 		&:focus
 			transform: scale(.9)
 		
-
 	&__red
 		color: $red
 
 	&__green
 		color: $green
 
+	&--payment
+		&__container
+			box-shadow: 0 0 150px 0 rgba($green, 1)
 
 
+.basket
 
+	&__header
+		position: relative
+		display: flex
+		justify-content: center
+		align-items: center
+		background-color: $bg
+		box-shadow: 0 0 20px 0 rgba($black, 1)
+		border-radius: 15px
+		font-size: 24px
+		height: 75px
+		margin: 0 auto 25px
+		width: 94%
+		padding: 0 230px
+
+		p
+			margin-right: 130px
+
+			&:last-child
+				margin-right: 0
+
+		span
+			color: $accent
+
+		button
+			position: absolute
+			right: 0
+			top: 0
+			bottom: 0
+			padding: 0 30px
+			color: $accent
+			background-color: transparent
+			border: none
+			outline: none
+			cursor: pointer
+			transition: all .6s
+			border-radius: 15px
+			height: 75px
+			line-height: 75px
+
+			&:hover,
+			&:focus
+				background-color: $accent
+				color: $text
 	
+
+	&__list
+		display: flex
+		flex-wrap: wrap
+		justify-content: space-around
+		width: 94%
+		margin: 0 auto
+		text-align: left
+
+	&__item
+		width: 32%
+		background-color: $bg
+		border-radius: 15px
+		padding: 15px
+		box-shadow: 0 0 20px 0 rgba($black, 1)
+		margin-bottom: 15px
+		display: flex
+		justify-content: space-between
+		flex-wrap: wrap
+		align-items: center
+
+		&_img
+			width: 50%
+			margin-right: 5%
+
+			img
+				display: block
+				max-width: 100%
+				height: auto
+				margin: 0 auto
+
+		&_text
+			width: 45%
+			margin-bottom: 45px
+
+		h3
+			font-size: 20px
+			margin-bottom: 20px
+
+			span
+				font-size: 12px
+
+		p
+			font-size: 18px
+
+			span
+				color: $green
+				font-size: 24px
+
+		a
+			color: #565656
+			box-shadow: 0 0 5px 0 rgba($black, .4)
+			width: 100%
+			margin-bottom: 10px
+			border-color: transparent
+			padding: 0 30px
+
+			&:hover,
+			&:focus
+				border-color: $accent
+				background-color: transparent
+				color: $accent
+
+
+.data
+	width: 70%
+
+	&__block
+		display: flex
+		justify-content: space-between
+		flex-wrap: wrap
+		text-align: left
+		font-size: 24px
+
+	&__col
+		text-align: center
+
+		.data__b
+
+	&__line
+		width: 100%
+		margin-bottom: 15px
+
+		&:last-child
+			margin-bottom: 0
+
+		&--min
+			width: 48%
+
+	&__price
+		font-size: 24px
+
+		span
+			color: $green
+
+	.btn
+		background-color: $bg
+
+	&__label
+		margin: 15px 0
+	
+	label
+		position: relative
+		padding-left: 70px
+		color: $text
+		font-size: 24px
+		line-height: 1.4
+		cursor: pointer
+		margin-bottom: 0
+		margin-right: 0
+		background-color: transparent
+		text-align: left
+
+		&:hover,
+		&:focus
+			background-color: transparent
+			box-shadow: none
+
+		&::before,
+		&::after
+			content: ''
+			position: absolute
+
+		&::before
+			left: 10px
+			width: 40px
+			height: 40px
+			border-radius: 3px
+			border: 1px solid $text
+
+		&::after
+			width: 30px
+			height: 30px
+			border-radius: 3px
+			border: 1px solid $green
+			background: $green
+			left: 15px
+			top: 5px
+			transition: all .6s
+
+	input[type="checkbox"]
+		display: none
+
+	input[type="checkbox"]:checked + label::after
+		transform: scale(1)
+
+	input[type="checkbox"] + label::after
+		transform: scale(0)
 
 
 
