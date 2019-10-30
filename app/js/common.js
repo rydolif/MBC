@@ -1,6 +1,17 @@
 $(function() {
 
 
+  $( "#selection input" ).on( "click", function() {
+    $( "#input" ).val( $( ".answer-one:checked" ).val());
+  });
+  
+  $("#one").click(function() {
+    $('#base').text("Почта");
+  });
+  $("#two").click(function() {
+    $('#base').text("Курьер");
+  });
+
 
 //---------------------------tabs-----------------------
   $('.tabs__wrap').hide();
@@ -15,30 +26,30 @@ $(function() {
     $(selectTab).fadeIn();
   });
 
-  $( "#one input" ).on( "click", function() {
-    $( "#one a" ).removeClass('disabled');
-  });
-  $( "#two input" ).on( "click", function() {
-    $( "#two a" ).removeClass('disabled');
-  });
-  $( "#three input" ).on( "click", function() {
-    $( "#three a" ).removeClass('disabled');
-  });
-  $( "#four input" ).on( "click", function() {
-    $( "#four a" ).removeClass('disabled');
-  });
-  $( "#five input" ).on( "click", function() {
-    $( "#five a" ).removeClass('disabled');
-  });
-  $( "#six input" ).on( "click", function() {
-    $( "#six a" ).removeClass('disabled');
-  });
-  $( "#seven input" ).on( "click", function() {
-    $( "#seven a" ).removeClass('disabled');
-  });
-  $( "#eight input" ).on( "click", function() {
-    $( "#eight a" ).removeClass('disabled');
-  });
+  // $( "#one input" ).on( "click", function() {
+  //   $( "#one a" ).removeClass('disabled');
+  // });
+  // $( "#two input" ).on( "click", function() {
+  //   $( "#two a" ).removeClass('disabled');
+  // });
+  // $( "#three input" ).on( "click", function() {
+  //   $( "#three a" ).removeClass('disabled');
+  // });
+  // $( "#four input" ).on( "click", function() {
+  //   $( "#four a" ).removeClass('disabled');
+  // });
+  // $( "#five input" ).on( "click", function() {
+  //   $( "#five a" ).removeClass('disabled');
+  // });
+  // $( "#six input" ).on( "click", function() {
+  //   $( "#six a" ).removeClass('disabled');
+  // });
+  // $( "#seven input" ).on( "click", function() {
+  //   $( "#seven a" ).removeClass('disabled');
+  // });
+  // $( "#eight input" ).on( "click", function() {
+  //   $( "#eight a" ).removeClass('disabled');
+  // });
 
 
 //------------------------------hamburger-----------------------------
@@ -89,53 +100,46 @@ $(function() {
           $(this).addClass('active');
       }
   });
-
-//------------------------------------form-------------------------------------------
-  $('input[type="tel"]').mask('+000 (00) 000-00-00');
-
-  jQuery.validator.addMethod("phoneno", function(phone_number, element) {
-     return this.optional(element) || phone_number.match(/\+[0-9]{3}\s\([0-9]{2}\)\s[0-9]{3}-[0-9]{2}-[0-9]{2}/);
-  }, "Введите Ваш телефон");
-
-  $(".form").each(function(index, el) {
-    $(el).addClass('form-' + index);
-
-    $('.form-' + index).validate({
-      rules: {
-        phone: {
-          required: true,
-          phoneno: true
-        },
-        name: 'required',
-      },
-      messages: {
-        name: "Введите Ваше имя",
-        phone: "Введите Ваш телефон",
-      },
-      submitHandler: function(form) {
-        var t = {
-          name: jQuery('.form-' + index).find("input[name=name]").val(),
-          phone: jQuery('.form-' + index).find("input[name=phone]").val(),
-          subject: jQuery('.form-' + index).find("input[name=subject]").val()
-        };
-        ajaxSend('.form-' + index, t);
-      }
-    });
-
-  });
-
-  function ajaxSend(formName, data) {
-    jQuery.ajax({
-      type: "POST",
-      url: "sendmail.php",
-      data: data,
-      success: function() {
-        $(".modal").popup("hide");
-        $("#thanks").popup("show");
-        setTimeout(function() {
-          $(formName).trigger('reset');
-        }, 2000);
-      }
-    });
-  }
 });
+
+//--------------------------------------scroll------------------------------
+  // $(window).resize(function(event) {
+  //   var carousel = $("#carousel").waterwheelCarousel({
+  //     flankingItems: 2,
+  //     forcedImageWidth: 260,
+  //     forcedImageHeight: 700,
+  //     movingToCenter: function ($item) {
+  //       $('#callback-output').prepend('movingToCenter: ' + $item.attr('id') + '<br/>');
+  //     },
+  //     movedToCenter: function ($item) {
+  //       $('#callback-output').prepend('movedToCenter: ' + $item.attr('id') + '<br/>');
+  //     },
+  //     movingFromCenter: function ($item) {
+  //       $('#callback-output').prepend('movingFromCenter: ' + $item.attr('id') + '<br/>');
+  //     },
+  //     movedFromCenter: function ($item) {
+  //       $('#callback-output').prepend('movedFromCenter: ' + $item.attr('id') + '<br/>');
+  //     },
+  //     clickedCenter: function ($item) {
+  //       $('#callback-output').prepend('clickedCenter: ' + $item.attr('id') + '<br/>');
+  //     }
+  //   });
+
+  //   $('#prev').bind('click', function () {
+  //     carousel.prev();
+  //     return false
+  //   });
+
+  //   $('#next').bind('click', function () {
+  //     carousel.next();
+  //     return false;
+  //   });
+
+  //   $('#reload').bind('click', function () {
+  //     newOptions = eval("(" + $('#newoptions').val() + ")");
+  //     carousel.reload(newOptions);
+  //     return false;
+  //   });
+  // });
+
+

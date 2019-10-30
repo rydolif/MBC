@@ -3,7 +3,7 @@
 
 <head>
 	<meta charset="utf-8">
-	<title>Вход</title>
+	<title>ILIDIAN</title>
 	<meta name="description" content="">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
@@ -40,30 +40,70 @@
 		</div>
 	</header>
 
-	<section class="login login--login">
+	<section class="hero">
 		<div class="container">
 
-			<div class="login__nav">
-				<a href="basket.html">Корзина</a>
-				<a href="login.html">Профиль</a>
+			<div class="hero__slider swiper-container">
+				<div class="swiper-wrapper">
+					<div class="swiper-slide">
+						<img src="img/hero--slide.jpg" alt="">
+					</div>
+					<div class="swiper-slide">
+						<img src="img/hero--slide.jpg" alt="">
+					</div>
+					<div class="swiper-slide">
+						<img src="img/hero--slide.jpg" alt="">
+					</div>
+					<div class="swiper-slide">
+						<img src="img/hero--slide.jpg" alt="">
+					</div>
+					<div class="swiper-slide">
+						<img src="img/hero--slide.jpg" alt="">
+					</div>
+				</div>
+				<div class="hero__pagination swiper-pagination"></div>
+				<div class="hero__next swiper-button-next"></div>
+				<div class="hero__prev swiper-button-prev"></div>
 			</div>
 
-			<div class="login__edit">
-				<a href="login.html">Есть учетная запись</a>
-				<a href="login-none.html">Нет учетнай записи</a>
+		</div>
+	</section>
+
+	<section class="catalog">
+		<div class="container">
+			<div class="catalog__container click">
+				<h2>Новые поступления в коллекции</h2>
+				<a href="#gallery" class="btn btn--form">Каталог</a>
+			</div>
+		</div>
+	</section>
+
+	<section class="gallery" id="gallery">
+		<div class="container">
+
+			<div class="gallery__grid">
+				
+				<div class="gallery__item"><img src="img/gallery1.jpg" alt=""></div>
+				<div class="gallery__item gallery__item--big"><img src="img/gallery2.jpg" alt=""></div>
+				<div class="gallery__item "><img src="img/gallery1.jpg" alt=""></div>
+				<div class="gallery__item"><img src="img/gallery1.jpg" alt=""></div>
+				<div class="gallery__item"><img src="img/gallery1.jpg" alt=""></div>
+				<div class="gallery__item gallery__item--big"><img src="img/gallery2.jpg" alt=""></div>
+
 			</div>
 
-			<from class="login__form form">
-				<p>Вход</p>
-				<div class="cabinet__input">
-					<input type="email" placeholder="Email*" required>
-				</div>
-				<div class="cabinet__input">
-					<input type="password" placeholder="Пароль*" required>
-				</div>
-				<button class="btn btn--form">Войти</button>
-				<a href="login-none.html" class="login__pass">Забыли пароль?</a>
-			</from>
+		</div>
+	</section>
+
+	<section class="look">
+		<div class="container">
+			
+			<div class="look__container">
+				<p>Интересно?</p>
+				<h2>Тогда смотри что у нас есть!</h2>
+				<a href="#" class="btn btn--form">Смотреть</a>
+				<img src="img/look--bg.jpg" alt="">
+			</div>
 
 		</div>
 	</section>

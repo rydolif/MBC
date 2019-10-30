@@ -27,13 +27,13 @@
 
 			<nav class="header__nav">
 				<ul>
-					<li><a href="#">Главная</a></li>
-					<li><a href="#">Профиль</a></li>
-					<li><a href="#">Мужское</a></li>
-					<li><a href="#">Женское</a></li>
-					<li><a href="#">Коллекции</a></li>
-					<li><a href="#">Limited CFY</a></li>
-					<li><a href="#">News</a></li>
+					<li><a href="main.html">Главная</a></li>
+					<li><a href="profile.html">Профиль</a></li>
+					<li><a href="man.html">Мужское</a></li>
+					<li><a href="girl.html">Женское</a></li>
+					<li><a href="magaz.html">Коллекции</a></li>
+					<li><a href="limited.html">Limited CFY</a></li>
+					<li><a href="news.html">News</a></li>
 				</ul>
 			</nav>
 
@@ -159,13 +159,26 @@
 						</div>
 
 						<p><b>Доставка</b></p>
-						<select name="" id="">
-							<option value="Почта">Почта</option>
-							<option value="Самовывоз">Самовывоз</option>
-						</select>
+						<div class="selection" id="selection">
+							<p id="base" class="selection__text">Почта</p>
+							<input type="checkbox" name="baseone" class="answer answer-one" value="Почта" id="input">
 
-						<a href="#" class="btn btn--tovar">Оформить</a>
-						<a href="#" class="btn btn--tovar">Добавить карзину</a>
+							<div class="selection__wrap">
+								<input type="radio" name="radio1" class="answer answer-one" value="Почта" id="one" checked>
+								<label for="one" class="selection__label">Почта</label>
+
+								<input type="radio" name="radio1" class="answer answer-one" value="Добавить карзину" id="two">
+								<label for="two" class="selection__label">Курьер</label>
+							</div>
+						</div>
+
+						<div class="tovar__description_price tovar__description_price--mobile">
+							<p><span>89 €</span></p>
+							<p>“Демонстрируя превосходство” p.s.</p>
+						</div>
+
+						<a href="#" class="btn btn--form">Оформить</a>
+						<a href="#" class="btn btn--form">Добавить карзину</a>
 
 					</form>
 
@@ -179,14 +192,15 @@
 	<footer class="footer">
 		<div class="footer__container container">
 
-			<ul>
-				<li><a href="#">Главная</a></li>
-				<li><a href="#">Мужское</a></li>
-				<li><a href="#">Limited CFY</a></li>
-				<li><a href="#">News</a></li>
-				<li><a href="#">Женское</a></li>
-				<li><a href="#">Коллекции</a></li>
-			</ul>
+				<ul>
+					<li><a href="main.html">Главная</a></li>
+					<li><a href="profile.html">Профиль</a></li>
+					<li><a href="man.html">Мужское</a></li>
+					<li><a href="girl.html">Женское</a></li>
+					<li><a href="magaz.html">Коллекции</a></li>
+					<li><a href="limited.html">Limited CFY</a></li>
+					<li><a href="news.html">News</a></li>
+				</ul>
 
 			<p>“ILIDIAN <span>SUPERNOVA”</span></p>
 
